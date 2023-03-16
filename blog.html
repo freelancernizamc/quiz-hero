@@ -41,15 +41,89 @@
         </section>
     </header>
     <main>
-        <h1 class="text-7xl text-center font-bold text-[#1090D8]">Question & Answer Section</h1>
-        <h2 class="text-3xl text-center text-lime-900 font-bold">Question 1 : What is the Difference between map, filter, forEach  and find</h2>
-        <h2 class="text-2xl text-center text-black font-bold">Ans: Difference between map, filter, forEach and find are as follows:</h2>
+        <h1 class="text-7xl text-center font-bold text-[#1090D8]">Question & Answer Section</h1><br>
+        <h2 class="text-3xl text-center text-lime-900 font-bold">Question 1 : What is the Difference between map, filter, forEach  and find</h2><br>
+        <h2 class="text-2xl text-center text-black font-bold">Ans: Difference between map, filter, forEach and find are as follows:</h2><br>
         <p class="text-2xl text-justify text-slate-900 font-bold px-10"> map: creates a new array with the same length as the input array and applies a provided function to each element in the input array. The returned values from the function are used to populate the new array. map does not modify the original array. <br>
          filter: creates a new array containing all elements of the input array that satisfy a provided condition. The condition is specified using a callback function that returns a boolean value.<br>
          forEach:  executes a provided function once for each element in the input array. It does not create a new array and does not return a value.<br>
-         find: returns the first element in the input array that satisfies a provided condition. The condition is specified using a callback function that returns a boolean value. If no element satisfies the condition.   
+         find: returns the first element in the input array that satisfies a provided condition. The condition is specified using a callback function that returns a boolean value. If no elements match, it returns undefined..   
 
-        </p>
+        </p><br>
+        <h2 class="text-3xl text-center text-rose-900 font-bold">Question 2: What is the difference between LocalStorage, SessionStorage, and Cookies? </h2><br>
+        <h2 class="text-2xl text-center text-black font-bold">Ans: Difference between LocalStorage, SessionStorage, and Cookies are as follows;</h2><br>
+        <div class="text-2xl text-black font-bold px-10">
+        <p>LocalStorage: It stores data with no expiration date and persists even after the browser or the computer is restarted. It can only be cleared through JavaScript or clearing the browser cache. It can store larger amounts of data (typically up to 5-10 MB) than cookies, and can only be accessed by the same domain that created it.</p><br>
+        <p>SessionStorage: It can also store larger amounts of data than cookies (typically up to 5-10 MB) but is only available for the duration of the session. It stores data only for a single session, which ends when the browser is closed. It is useful for storing temporary data that should be cleared when the user leaves the site.</p><br>
+        <p>Cookies: It can have an expiration date or can persist until deleted. It can be cleared through JavaScript or by the user manually deleting them. They are limited to a maximum size of 4KB and can be accessed by any website that has access to them.</p>
+      </div><br>
+      <h2 class="text-3xl text-center text-green-900 font-bold">Question 3: what is even loop? How does it work?</h2><br>
+      <p class="text-2xl text-black font-bold px-10">Ans: In JavaScript, the event loop is a key mechanism for handling asynchronous operations and executing code in a non-blocking way. It is a loop that constantly checks the JavaScript runtime environment for new events, and executes the appropriate code for each event as it is encountered.<br>
+
+        When an event is triggered, such as a user clicking a button on a web page or an asynchronous operation completing, it is added to a queue called the event queue. The event loop constantly checks this queue for new events, and when it encounters an event, it executes the appropriate code that is associated with that event.</p><br>
+        <h2 class="text-3xl text-center text-blue-900 font-bold"> Question 4: Write about quizTimer and chooseQuiz function work?</h2>
+        <div class="text-2xl text-black font-bold px-10">
+        <p>quizTimer: The function starts by checking if the dismiss parameter is true, and if so, it clears an interval timer that was previously set by this function (stored in the timer variable) and returns from the function.
+          If dismiss is not true, the function sets an interval timer that runs every second (1000 milliseconds).
+        </p><br>
+        <p>chooseQuiz: The function starts by searching for an object with an id property that matches the id property of the quiz data located at the specified index. This is done using the find method on an array called answers, which is assumed to already exist in the code. Finally, the function calls a displayAnswers function with the answers array as its argument.</p>
+      </div><br>
+
     </main>
+    <footer class="footer grid-rows-1 p-10 bg-neutral text-neutral-content">
+     
+      <div>
+        <span class="footer-title text-2xl text-yellow-300">My Projects</span> 
+        <a class="link link-hover" href="https://freelancernizamc.github.io/digital-agency/">Digital Agency</a> 
+        <a class="link link-hover" href="https://freelancernizamc.github.io/donate-today/">Donate Today</a> 
+        <a class="link link-hover" href="https://freelancernizamc.github.io/convension-center/">Convension Center</a> 
+        <a class="link link-hover" href="https://reveal-bs.netlify.app/">Reveal</a>
+        <a class="link link-hover" href="https://freelancernizamc.github.io/jakanaka-project/">Jakanaka Projects</a>
+        <a class="link link-hover" href="https://freelancernizamc.github.io/penguins-fashion/">Penguine Fashion</a>
+        <a class="link link-hover" href="https://freelancernizamc.github.io/influencer-products/">Influencer Products</a>
+      </div> 
+      <div>
+        <span class="footer-title text-2xl text-yellow-300">Milstone</span> 
+        <a class="link link-hover" href="https://freelancernizamc.github.io/milstone-01/">Milstone 01</a> 
+        <a class="link link-hover" href="https://milstone-2.netlify.app/">Milstone 02</a> 
+        <a class="link link-hover" href="https://freelancernizamc.github.io/milstone-03/index.html">Milstone 03</a> 
+        <a class="link link-hover" href="https://freelancernizamc.github.io/milstone-04/">Milstone 04</a>
+        <a class="link link-hover" href="https://milstone-05.netlify.app/">Milstone 05</a>
+        <a class="link link-hover" href="https://freelancernizamc.github.io/milstone-06/">Milstone 06</a>
+        <a class="link link-hover" href="https://freelancernizamc.github.io/milstone-07/">Milstone 07</a>
+      </div> 
+      
+      <div>
+        <span class="footer-title text-2xl text-yellow-300">Assignment</span> 
+        <a class="link link-hover" href="https://freelancernizamc.github.io/assignment-1/">Assignment 01</a> 
+        <a class="link link-hover" href="https://freelancernizamc.github.io/assignment-2/">Assignment 02</a> 
+        <a class="link link-hover" href="https://assignment-03-bynizam.netlify.app/">Assignment 03</a> 
+        <a class="link link-hover" href="">Assignment 04</a>
+        <a class="link link-hover" href="https://assignment-5by-nizam.netlify.app/">Assignment 05</a>
+        <a class="link link-hover" href="https://assignment-06-bynizam.netlify.app/">Assignment 06</a>
+        <a class="link link-hover" href="">Assignment 07</a>
+      </div> 
+      <div>
+        <span class="footer-title text-2xl text-yellow-300">My Projects</span> 
+        <a class="link link-hover">Animated Website</a> 
+        <a class="link link-hover">Bootstrap Website</a> 
+        <a class="link link-hover">Nice Theme</a> 
+        <a class="link link-hover">Responsive Website</a>
+        <a class="link link-hover">Stylish Theme</a>
+        <a class="link link-hover">My Portfolio</a>
+        <a class="link link-hover">Bikerz Zone</a>
+      </div> 
+      <div>
+        <span class="footer-title text-2xl text-yellow-300">My Projects</span> 
+        <a class="link link-hover">My Shopping Cart</a> 
+        <a class="link link-hover" href="https://tea-house-by-n.netlify.app/">Tea House</a> 
+        <a class="link link-hover">Projects with API</a> 
+        <a class="link link-hover">Amar Bank</a>
+        <a class="link link-hover">Mobile Hunter</a>
+        <a class="link link-hover">Countries API</a>
+        <a class="link link-hover">Tea House</a>
+      </div>
+    </footer>
+    <h6 class="text-center bg-neutral text-neutral-content">Copyright &copy;2023 Allright Reserved</h6>
 </body>
 </html>
